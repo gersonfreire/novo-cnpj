@@ -1,0 +1,7 @@
+.valido {
+    color: var(--bs-green);
+}
+
+.invalido {
+    color: var(--bs-red);
+}

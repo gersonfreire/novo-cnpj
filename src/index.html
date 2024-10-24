@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Cálculo de DV de CNPJ alfanumérico</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/styles.css"></style>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/prism.css">
+</head>
+
+<body>
+    <div class="container mb-5">
+        <h1 class="mt-5">Cálculo de DV de CNPJ alfanumérico</h1>
+
+        <hr />
+
+        <!-- Cálculo de DV -->
+        <h3>Cálculo de DV</h3>
+        <div class="row">
+            <div class="col-md-3 form-group">
+                <label for="cnpjSemDV">CNPJ sem DV</label>
+                <input type="text" id="cnpjSemDV" class="form-control" maxlength="15">
+            </div>
+            <div id="resultadoCalculoDV" class="col-md-3" style="display: none;">
+                <label for="dvCalculado"></label>
+                <p>
+                    <strong>DV Calulado: </strong>
+                    <span id="dvCalculado"></span>
+                </p>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary" onclick="calcula();">
+                    Calcular
+                </button>
+                <button type="button" class="btn btn-secondary" onclick="limpaCalculo();">
+                    Limpar
+                </button>
+            </div>
+        </div>
+        <div id="mensagemErroCalculo" class="alert alert-danger mt-2" role="alert" style="display: none;"></div>
+
+        <hr />
+
+        <!-- Validação de CNPJ -->
+        <h3>Validação de CNPJ</h3>
+        <div class="row">
+            <div class="col-md-3 form-group">
+                <label for="cnpj">CNPJ</label>
+                <input type="text" id="cnpj" class="form-control" maxlength="18">
+            </div>
+            <div id="resultadoValidacao" class="col-md-3" style="display: none;">
+                <label for="mensagemValidacao"></label>
+                <p>
+                    <strong>
+                        <span id="mensagemValidacao"></span>
+                    </strong>
+                </p>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-12">
+                <button type="button" class="btn btn-primary" onclick="valida();">
+                    Validar
+                </button>
+                <button type="button" class="btn btn-secondary" onclick="limpaValidacao();">
+                    Limpar
+                </button>
+            </div>
+        </div>
+
+        
+        <hr />
+        <h3>Exemplo JavaScript</h3>
+        <button type="button" class="btn btn-primary"
+            onclick="toggleVisualizacao('fonteExemploJavascript')">
+            Ver exemplo
+        </button>
+        <div id="fonteExemploJavascript" style="display: none;" class="mt-2">
+            <h4>cnpj.js</h4>
+            <pre class="language-javascript" data-src="javascript/cnpj.js" data-download-link
+                data-prismjs-copy="Copiar"
+                data-prismjs-copy-error="Erro ao copiar!"
+                data-prismjs-copy-success="Copiado!"></pre>
+        </div>
+
+        <hr />
+        <h3>Exemplo Java</h3>
+        <button type="button" class="btn btn-primary"
+            onclick="toggleVisualizacao('fonteExemploJava')">
+            Ver exemplo
+        </button>
+        <div id="fonteExemploJava" style="display: none;" class="mt-2">
+            <h4>CNPJValidator.java</h4>
+            <pre class="language-java" data-src="java/CNPJValidator.java" data-download-link
+                data-prismjs-copy="Copiar"
+                data-prismjs-copy-error="Erro ao copiar!"
+                data-prismjs-copy-success="Copiado!"></pre>
+        </div>
+
+        <hr />
+        <h3>Exemplo Python</h3>
+        <button type="button" class="btn btn-primary"
+            onclick="toggleVisualizacao('fonteExemploPython')">
+            Ver exemplo
+        </button>
+        <div id="fonteExemploPython" style="display: none;" class="mt-2">
+            <h4>dv.py</h4>
+            <pre class="language-python" data-src="python/dv.py" data-download-link
+                data-prismjs-copy="Copiar"
+                data-prismjs-copy-error="Erro ao copiar!"
+                data-prismjs-copy-success="Copiado!"></pre>
+            <h4>cnpj.py</h4>
+            <pre class="language-python" data-src="python/cnpj.py" data-download-link
+                data-prismjs-copy="Copiar"
+                data-prismjs-copy-error="Erro ao copiar!"
+                data-prismjs-copy-success="Copiado!"></pre>
+        </div>
+        
+        <hr />
+        <h3>Exemplo TypeScript</h3>
+        <button type="button" class="btn btn-primary"
+            onclick="toggleVisualizacao('fonteExemploTypescript')" class="mt-2">
+            Ver exemplo
+        </button>
+        <div id="fonteExemploTypescript" style="display: none;" class="mt-2">
+            <h4>cnpj.ts</h4>
+            <pre class="language-typescript" data-src="typescript/cnpj.ts" data-download-link
+                data-prismjs-copy="Copiar"
+                data-prismjs-copy-error="Erro ao copiar!"
+                data-prismjs-copy-success="Copiado!"></pre>
+        </div>
+
+    </div>
+
+    <script type="text/javascript">
+        function calcula() {
+            const cnpjSemDV = document.getElementById("cnpjSemDV").value;
+            const resultadoCalculoDV = document.getElementById("resultadoCalculoDV");
+            const dvCalculado = document.getElementById("dvCalculado");
+            const mensagemErro = document.getElementById("mensagemErroCalculo");
+            resultadoCalculoDV.style.display = "none";
+            dvCalculado.innerHTML = "";
+            mensagemErro.style.display = "none";
+            mensagemErro.innerHTML = "";
+            try {
+                const dv = CNPJ.calculaDV(cnpjSemDV);
+                dvCalculado.innerHTML = dv;
+                resultadoCalculoDV.style.display = "block";
+            } catch (e) {
+                mensagemErro.style.display = "block";
+                mensagemErro.innerHTML = e.message;
+            }
+        }
+
+        function limpaCalculo() {
+            const cnpjSemDV = document.getElementById("cnpjSemDV");
+            const resultadoCalculoDV = document.getElementById("resultadoCalculoDV");
+            const dvCalculado = document.getElementById("dvCalculado");
+            const mensagemErro = document.getElementById("mensagemErroCalculo");
+            cnpjSemDV.value = "";
+            resultadoCalculoDV.style.display = "none";
+            dvCalculado.innerHTML = "";
+            mensagemErro.style.display = "none";
+            mensagemErro.innerHTML = "";
+        }
+
+        function valida() {
+            const cnpj = document.getElementById("cnpj").value;
+            const resultadoValidacao = document.getElementById("resultadoValidacao");
+            const mensagemValidacao = document.getElementById("mensagemValidacao");
+            resultadoValidacao.style.display = "none";
+            mensagemValidacao.innerHTML = "";
+            const isValid = CNPJ.isValid(cnpj);
+            if (isValid) {
+                mensagemValidacao.classList.remove("invalido");
+                mensagemValidacao.classList.add("valido");
+                mensagemValidacao.innerHTML = "Válido";
+            } else {
+                mensagemValidacao.classList.remove("valido");
+                mensagemValidacao.classList.add("invalido");
+                mensagemValidacao.innerHTML = "Inválido";
+            }
+            resultadoValidacao.style.display = "block";
+        }
+
+        function limpaValidacao() {
+            const cnpj = document.getElementById("cnpj");
+            const resultadoValidacao = document.getElementById("resultadoValidacao");
+            const mensagemValidacao = document.getElementById("mensagemValidacao");
+            cnpj.value = "";
+            resultadoValidacao.style.display = "none";
+            mensagemValidacao.innerHTML = "";
+        }
+
+        function toggleVisualizacao(idElemento) {
+            var elemento = document.getElementById(idElemento);
+            if (elemento.style.display === "none") {
+                elemento.style.display = "block";
+            } else {
+                elemento.style.display = "none";
+            }
+        }
+    </script>
+    <script type="text/javascript" src="assets/scripts/prism.js"></script>
+    <script type="text/javascript" src="javascript/cnpj.js"></script>
+</body>
+
+</html>
