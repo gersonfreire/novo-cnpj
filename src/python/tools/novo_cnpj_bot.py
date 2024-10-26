@@ -1,3 +1,4 @@
+import os
 import re
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
@@ -34,8 +35,10 @@ def validar(update: Update, context: CallbackContext) -> None:
         update.message.reply_text('CNPJ inválido.')
 
 def main() -> None:
-    # Substitua 'YOUR_TOKEN_HERE' pelo token do seu bot
-    updater = Updater("YOUR_TOKEN_HERE")
+        
+    # Ou substitua 'YOUR_TOKEN_HERE' pelo token do seu bot, que você recebeu do BotFather
+    token = os.getenv("TOKEN","YOUR_TOKEN_HERE")
+    updater = Updater(token)
 
     dispatcher = updater.dispatcher
 
