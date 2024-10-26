@@ -1,5 +1,6 @@
 import os
 import re
+import dotenv
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
@@ -35,6 +36,9 @@ async def validar(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         await update.message.reply_text('CNPJ inválido.')
 
 def main() -> None:
+    
+    load
+    
     # Crie uma variável de ambiente com nome TOKEN no prompt de comando
     # ou substitua 'YOUR_TOKEN_HERE' pelo token do seu bot, que você recebeu do BotFather no arquivo sample.env
     # depois renomeie o arquivo sample.env para .env
