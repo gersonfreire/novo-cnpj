@@ -1,3 +1,26 @@
+gersonfreire: Crie um chatbot para o telegram que valide o digito verificador de um cnpj
+
+GitHub Copilot: ### Plano em Pseudocódigo
+
+1. **Configurar o Bot do Telegram:**
+
+   - Obter o token do Bot do Telegram.
+   - Configurar a biblioteca `python-telegram-bot`.
+2. **Função para validar o CNPJ:**
+
+   - Implementar a função `validar_cnpj` que verifica o dígito verificador de um CNPJ.
+3. **Funções de Manipulação de Mensagens:**
+
+   - Implementar a função `start` para iniciar a conversa.
+   - Implementar a função `validar` para validar o CNPJ enviado pelo usuário.
+4. **Configurar o Dispatcher e o Polling:**
+
+   - Configurar os handlers para as mensagens.
+   - Iniciar o polling para receber mensagens.
+
+### Código
+
+```python
 import re
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
@@ -33,7 +56,11 @@ def validar(update: Update, context: CallbackContext) -> None:
     else:
         update.message.reply_text('CNPJ inválido.')
 
-def main() -> None:
+def main() -> None
+
+:
+
+
     # Substitua 'YOUR_TOKEN_HERE' pelo token do seu bot
     updater = Updater("YOUR_TOKEN_HERE")
 
@@ -47,3 +74,20 @@ def main() -> None:
 
 if __name__ == '__main__':
     main()
+```
+
+### Instruções
+
+1. **Instalar Dependências:**
+
+   ```sh
+   pip install python-telegram-bot
+   ```
+2. **Substituir o Token:**
+
+   - Substitua `"YOUR_TOKEN_HERE"` pelo token do seu bot do Telegram.
+3. **Executar o Script:**
+
+   ```sh
+   python novo_cnpj_bot.py
+   ```
