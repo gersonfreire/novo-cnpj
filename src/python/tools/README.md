@@ -1,6 +1,6 @@
-gersonfreire: Crie um chatbot para o telegram que valide o digito verificador de um cnpj
+**Chatbot que valida CNPJ pelo telegram**
 
-GitHub Copilot: ### Plano em Pseudocódigo
+Plano em Pseudocódigo
 
 1. **Configurar o Bot do Telegram:**
 
