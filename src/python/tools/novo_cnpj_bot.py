@@ -1,7 +1,7 @@
 import os
 import re
 from telegram import Update
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
+from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
 # Função para validar o CNPJ
 def validar_cnpj(cnpj: str) -> bool:
@@ -23,33 +23,30 @@ def validar_cnpj(cnpj: str) -> bool:
     return cnpj[-2:] == f"{digito1}{digito2}"
 
 # Função para iniciar a conversa
-def start(update: Update, context: CallbackContext) -> None:
-    update.message.reply_text('Olá! Envie um CNPJ para validação.')
+async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    await update.message.reply_text('Olá! Envie um CNPJ para validação.')
 
 # Função para validar o CNPJ enviado pelo usuário
-def validar(update: Update, context: CallbackContext) -> None:
+async def validar(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     cnpj = update.message.text
     if validar_cnpj(cnpj):
-        update.message.reply_text('CNPJ válido.')
+        await update.message.reply_text('CNPJ válido.')
     else:
-        update.message.reply_text('CNPJ inválido.')
+        await update.message.reply_text('CNPJ inválido.')
 
 def main() -> None:
-        
     # Crie uma variável de ambiente com nome TOKEN ou substitua 'YOUR_TOKEN_HERE' pelo token do seu bot, que você recebeu do BotFather
     # variável de ambiente no windows pela linha de comando cmd: set TOKEN=YOUR_TOKEN_HERE
     # variável de ambiente no linux pela linha de comando: export TOKEN=YOUR_TOKEN_HERE
     # em seguida execute o script com o comando: python novo_cnpj_bot.py
-    token = os.getenv("TOKEN","YOUR_TOKEN_HERE")
-    updater = Updater(token)
+    token = os.getenv("TOKEN", "YOUR_TOKEN_HERE")
+    
+    application = Application.builder().token(token).build()
 
-    dispatcher = updater.dispatcher
+    application.add_handler(CommandHandler("start", start))
+    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, validar))
 
-    dispatcher.add_handler(CommandHandler("start", start))
-    dispatcher.add_handler(MessageHandler(Filters.text & ~Filters.command, validar))
-
-    updater.start_polling()
-    updater.idle()
+    application.run_polling()
 
 if __name__ == '__main__':
     main()

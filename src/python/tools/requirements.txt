@@ -1,2 +1,2 @@
 # requirements.txt
-python-telegram-bot==12.8
+python-telegram-bot==21.0
