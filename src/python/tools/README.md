@@ -85,9 +85,14 @@ if __name__ == '__main__':
    ```
 2. **Substituir o Token:**
 
-   - Substitua `"YOUR_TOKEN_HERE"` pelo token do seu bot do Telegram.
+* Obtenha um token do telegram no BotFather ([Entrar no BotFather](https://t.me/botfather))
+* Substitua 'YOUR_TOKEN_HERE' pelo token do seu bot, que você recebeu do BotFather no arquivo sample.env
+* Renomeie o arquivo sample.env para .env
+
 3. **Executar o Script:**
 
    ```sh
    python novo_cnpj_bot.py
    ```
+
+### Bot "demo" já rodando no Telegram: [Bot Demo de validação CNPJ](https://t.me/OpenGovBot)

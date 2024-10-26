@@ -35,11 +35,11 @@ async def validar(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         await update.message.reply_text('CNPJ inválido.')
 
 def main() -> None:
-    # Crie uma variável de ambiente com nome TOKEN ou substitua 'YOUR_TOKEN_HERE' pelo token do seu bot, que você recebeu do BotFather
-    # variável de ambiente no windows pela linha de comando cmd: set TOKEN=YOUR_TOKEN_HERE
-    # variável de ambiente no linux pela linha de comando: export TOKEN=YOUR_TOKEN_HERE
+    # Crie uma variável de ambiente com nome TOKEN no prompt de comando
+    # ou substitua 'YOUR_TOKEN_HERE' pelo token do seu bot, que você recebeu do BotFather no arquivo sample.env
+    # depois renomeie o arquivo sample.env para .env
     # em seguida execute o script com o comando: python novo_cnpj_bot.py
-    token = os.getenv("TOKEN", "YOUR_TOKEN_HERE")
+    token = os.getenv("TOKEN")
     
     application = Application.builder().token(token).build()
 
