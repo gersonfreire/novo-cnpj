@@ -36,7 +36,10 @@ def validar(update: Update, context: CallbackContext) -> None:
 
 def main() -> None:
         
-    # Ou substitua 'YOUR_TOKEN_HERE' pelo token do seu bot, que você recebeu do BotFather
+    # Crie uma variável de ambiente com nome TOKEN ou substitua 'YOUR_TOKEN_HERE' pelo token do seu bot, que você recebeu do BotFather
+    # variável de ambiente no windows pela linha de comando cmd: set TOKEN=YOUR_TOKEN_HERE
+    # variável de ambiente no linux pela linha de comando: export TOKEN=YOUR_TOKEN_HERE
+    # em seguida execute o script com o comando: python novo_cnpj_bot.py
     token = os.getenv("TOKEN","YOUR_TOKEN_HERE")
     updater = Updater(token)
 
