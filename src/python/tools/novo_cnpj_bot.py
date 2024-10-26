@@ -37,13 +37,13 @@ async def validar(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
 def main() -> None:
     
-    load
+    dotenv.load_dotenv()
     
     # Crie uma variável de ambiente com nome TOKEN no prompt de comando
     # ou substitua 'YOUR_TOKEN_HERE' pelo token do seu bot, que você recebeu do BotFather no arquivo sample.env
     # depois renomeie o arquivo sample.env para .env
     # em seguida execute o script com o comando: python novo_cnpj_bot.py
-    token = os.getenv("TOKEN")
+    token = dotenv.get_key(dotenv.find_dotenv(), "TOKEN")
     
     application = Application.builder().token(token).build()
 
