@@ -1,21 +1,27 @@
 # Novo CNPJ Brasil
 
-## Table of Contents
+## Sobre
 
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
+Para facilitar a vida dos dev's brasileiros, resolvi concentrar tudo aqui
 
-## About 
+Também publiquei um artigo em [Novo CNPJ: dev, prepare-se para trabalhar · telegram · TabNews](https://www.tabnews.com.br/telegram/novo-cnpj-dev-prepare-se-para-trabalhar)
 
-Para facilitar avida dos dev's brasileiros, resolvi concentrar tudo aqui, obtido do site original onde está a notícia:
+Mas o site original, onde está a notícia é o que segue abaixo:
 
 [CNPJ vai mudar em 2026 e Serpro libera códigos para ajudar na transição • Brasil • Tecnoblog](https://tecnoblog.net/noticias/cnpj-vai-mudar-em-2026-e-serpro-libera-codigos-para-ajudar-na-transicao/)
 
-## Getting Started 
+Também existe um esforço bacana de criar uma API que já está funcional, de outro colega, cujos créditos eu cito abaixo também, que disponibilizei como "fork" no link abaixo:
 
-Em cada sub-pasta de cada linguagem, tem um README específico, apenas clone e divirta-se.
+[gersonfreire/API-ValidadorCPF: API Publica para validar, gerar e futuramente consultar CPFs e CNPJs](https://github.com/gersonfreire/API-ValidadorCPF)
 
-## Usage
+Créditos do repositório original: [theofurtado05 (Theo Furtado Mauricio)](https://github.com/theofurtado05), obrigado Theo!
 
-Na pasta "src" tem uma subpasta para cada linguagem, escolha a sua.
+## Usando
+
+Na pasta "src" tem uma subpasta para cada linguagem, em cada subpasta existe um README específico para cada linguagem, escolha a sua, apenas clone e divirta-se.
+
+## Versão em C# implementada (não existe no SERPRO)
+
+### Arquivos
+
+- `validador.cs` -> classe com os métodos para cálculo do DV e validação de CNPJ alfanumérico
