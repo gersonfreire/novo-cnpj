@@ -18,11 +18,10 @@ Créditos do repositório original: [theofurtado05 (Theo Furtado Mauricio)](http
 
 ## Usando
 
-Na pasta "src" tem uma subpasta para cada linguagem, em cada pasta existe um README específico para cada linguagem, escolha a sua, apenas clone e divirta-se.
+Na pasta "src" tem uma subpasta para cada linguagem, em cada subpasta existe um README específico para cada linguagem, escolha a sua, apenas clone e divirta-se.
 
 ## Versão em C# implementada (não existe no SERPRO)
 
 ### Arquivos
 
 - `validador.cs` -> classe com os métodos para cálculo do DV e validação de CNPJ alfanumérico
-
