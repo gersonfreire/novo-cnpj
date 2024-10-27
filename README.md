@@ -6,9 +6,15 @@ Para facilitar a vida dos dev's brasileiros, resolvi concentrar tudo aqui, obtid
 
 [CNPJ vai mudar em 2026 e Serpro libera códigos para ajudar na transição • Brasil • Tecnoblog](https://tecnoblog.net/noticias/cnpj-vai-mudar-em-2026-e-serpro-libera-codigos-para-ajudar-na-transicao/)
 
+Também existe um esforço bacana de criar uma API que já está funcional, de outro colega, cujos créditos eu cito abaixo também, mas disponibilizei como "fork" no link abaixo:
+
+[gersonfreire/API-ValidadorCPF: API Publica para validar, gerar e futuramente consultar CPFs e CNPJs](https://github.com/gersonfreire/API-ValidadorCPF)
+
+Créditos do repositório original: [theofurtado05 (Theo Furtado Mauricio)](https://github.com/theofurtado05), obrigado Theo!
+
 ## Usando
 
-Na pasta "src" tem uma subpasta para cada linguagem, tem um README específico, escolha a sua, apenas clone e divirta-se.
+Na pasta "src" tem uma subpasta para cada linguagem, em cada pasta existe um README específico para cada linguagem, escolha a sua, apenas clone e divirta-se.
 
 ## Versão em C# implementada (não existe no SERPRO)
 
