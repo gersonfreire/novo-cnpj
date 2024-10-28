@@ -12,7 +12,7 @@ Mas o site original, onde está a notícia é o que segue abaixo:
 
 Também existe um esforço bacana de criar uma API que já está funcional, de outro colega, cujos créditos eu cito abaixo também, que disponibilizei como "fork" no link abaixo:
 
-[gersonfreire/API-ValidadorCPF: API Publica para validar, gerar e futuramente consultar CPFs e CNPJs](https://github.com/gersonfreire/API-ValidadorCPF)
+[Código fonte da API Publicada para validar, gerar e futuramente consultar CPFs e CNPJs](https://github.com/gersonfreire/API-ValidadorCPF)
 
 Créditos do repositório original: [theofurtado05 (Theo Furtado Mauricio)](https://github.com/theofurtado05), obrigado Theo!
 
