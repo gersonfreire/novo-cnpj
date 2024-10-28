@@ -1,0 +1,4 @@
+Flask
+pytest==6.2.4
+dotenv
+# pip install --upgrade Flask Werkzeug
