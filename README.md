@@ -24,9 +24,15 @@ Na pasta "src" tem uma subpasta para cada linguagem, em cada subpasta existe um 
 
 #### Pasta e arquivos
 
-src\c++ansi\cnpj.cpp
+`src\c++ansi\cnpj.cpp`
 
-Veja o arquivo src\c++ansi\readme.md para maiores detalhes
+Veja o arquivo` src\c++ansi\readme.md` para maiores detalhes
+
+### Versão COBOL implementada
+
+`src\cobol\valida.cbl`
+
+Veja o arquivo  `src\cobol\README.md` para maiores detalhes
 
 ---
 
