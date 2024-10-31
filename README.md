@@ -22,6 +22,16 @@ Na pasta "src" tem uma subpasta para cada linguagem, em cada subpasta existe um 
 
 ## Versão em C# implementada (não existe no SERPRO)
 
-### Arquivos
+#### Arquivos
 
 - `validador.cs` -> classe com os métodos para cálculo do DV e validação de CNPJ alfanumérico
+
+---
+
+### Versão em C++ implementada (ausente no SERPRO)
+
+#### Pasta e arquivos
+
+src\c++ansi\cnpj.cpp
+
+Veja o arquivo src\c++ansi\readme.md para maiores detalhes
