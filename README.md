@@ -16,6 +16,10 @@ Também existe um esforço bacana de criar uma API que já está funcional, de o
 
 Créditos do repositório original: [theofurtado05 (Theo Furtado Mauricio)](https://github.com/theofurtado05), obrigado Theo!
 
+## Endpoints Disponíveis
+
+[URL base da API publicada](https://apivalida.monitor.eco.br:9002/ "URL Base")
+
 ## Usando
 
 Na pasta "src" tem uma subpasta para cada linguagem, em cada subpasta existe um README específico para cada linguagem, escolha a sua, apenas clone e divirta-se.
