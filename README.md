@@ -10,16 +10,6 @@ Mas o site original, onde está a notícia é o que segue abaixo:
 
 [CNPJ vai mudar em 2026 e Serpro libera códigos para ajudar na transição • Brasil • Tecnoblog](https://tecnoblog.net/noticias/cnpj-vai-mudar-em-2026-e-serpro-libera-codigos-para-ajudar-na-transicao/)
 
-Também existe um esforço bacana de criar uma API que já está funcional, de outro colega, cujos créditos eu cito abaixo também, que disponibilizei como "fork" no link abaixo:
-
-[Código fonte da API Publicada para validar, gerar e futuramente consultar CPFs e CNPJs](https://github.com/gersonfreire/API-ValidadorCPF)
-
-Créditos do repositório original: [theofurtado05 (Theo Furtado Mauricio)](https://github.com/theofurtado05), obrigado Theo!
-
-## Endpoints Disponíveis
-
-[URL base da API publicada](https://apivalida.monitor.eco.br:9002/ "URL Base")
-
 ## Usando
 
 Na pasta "src" tem uma subpasta para cada linguagem, em cada subpasta existe um README específico para cada linguagem, escolha a sua, apenas clone e divirta-se.
@@ -30,8 +20,6 @@ Na pasta "src" tem uma subpasta para cada linguagem, em cada subpasta existe um 
 
 - `validador.cs` -> classe com os métodos para cálculo do DV e validação de CNPJ alfanumérico
 
----
-
 ### Versão em C++ implementada (ausente no SERPRO)
 
 #### Pasta e arquivos
@@ -39,3 +27,24 @@ Na pasta "src" tem uma subpasta para cada linguagem, em cada subpasta existe um 
 src\c++ansi\cnpj.cpp
 
 Veja o arquivo src\c++ansi\readme.md para maiores detalhes
+
+---
+
+
+### API de Validação e Geração de CPF e CNPJ
+
+Na pasta `src\javascript\api` existe uma API escrita em NodeJs, que oferece endpoints para validar e gerar números de CPF e CNPJ com base nas regras de validação estabelecidas. As regras de validação utilizadas nesta API seguem os cálculos descritos em [Regra de Validação para CPF e CNPJ](https://souforce.cloud/regra-de-validacao-para-cpf-e-cnpj-no-salesforce/).
+
+Agradeço ao [theofurtado05](https://github.com/theofurtado05), autor do repositório original desta API. Somente a publicação de deploy original [URL original](https://api-validador-cpf.vercel.app/) não está mais ativa. Caso você queira usar a API publicada, segue a URL base da publicação nova, funcionando, sem restrição:
+
+[URL da API publicada e ativa](https://apivalida.monitor.eco.br:9002/validarcpf/12345678909) 
+
+Créditos do repositório original: [theofurtado05 (Theo Furtado Mauricio)](https://github.com/theofurtado05), obrigado Theo!
+
+---
+
+
+
+Bot do Telegram, publicado, que valida CPF usando o código fonte da pasta `src\python\bot:`
+
+[Clique aqui para acessar o bot](https://t.me/OpenGovBot)
