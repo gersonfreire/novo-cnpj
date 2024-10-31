@@ -8,7 +8,7 @@ Esta API oferece endpoints para validar e gerar números de CPF e CNPJ com base 
 
 Agradeço ao [theofurtado05](https://github.com/theofurtado05), autor do repositório original. Somente a publicação de deploy original [URL original](https://api-validador-cpf.vercel.app/) não está mais ativa. Caso você queira usar a API publicada, segue a URL base da publicação nova, funcionando, sem restrição:
 
-[URL base da API publicada](https://apivalida.monitor.eco.br:9002/validarcpf/12345678909)
+[URL base da API publicada](https://apivalida.bigvps.com.br:9090/validarCpf/19379041721)
 
 ### Validar CPF
 
