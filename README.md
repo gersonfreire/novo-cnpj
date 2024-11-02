@@ -31,7 +31,7 @@ Mas o site original, onde está a notícia é o que segue abaixo:
 
 ***As versões nas linguagens não implementadas oringalmente pelo SERPRO, que também podem ser encontradas nas sub-pastas da pasta "SRC", com respectivos READMEs, são as seguintes:***
 
-* ***C#***
+* ***C# (dotnet)***
 * ***C++***
 * ***COBOL***
 * ***Ruby***
