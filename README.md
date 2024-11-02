@@ -12,27 +12,37 @@ Mas o site original, onde está a notícia é o que segue abaixo:
 
 ## Usando
 
-Na pasta "src" tem uma subpasta para cada linguagem, em cada subpasta existe um README específico para cada linguagem, escolha a sua, apenas clone e divirta-se.
+*Na pasta "src" tem uma subpasta para cada linguagem que já foi previamente implementada pelo SERPRO, em cada subpasta existe um README específico para cada linguagem, escolha a sua, apenas clone e divirta-se.*
 
-## Versão em C# implementada (não existe no SERPRO)
+---
+
+### Linguagens não implementadas pelo SERPRO
+
+***Como o objetivo aqui é facilitar a vida de todos os dev´s brasileiros, resolvi implementar em diversas linguagens e testar cada um do códigos fontes em seus respectivos ambientes típicos de execução, ou seja, montar um ambiente para cada uma das linguagens em que foi implementado e testar o executável, inclusive com correções e melhorias evolutivas, para garantir a confiabilidade e segurança do código fonte. Se você encontrar algum problema, não hesite em abrir um issue no Github do projeto.***
+
+***Seguem abaixo as versões nas linguagens não implementadas oringalmente pelo SERPRO, que também podem ser encontradas nas sub-pastas da pasta "SRC", com respectivos READMEs:***
+
+#### Versão em C# implementada
 
 #### Arquivos
 
 - `validador.cs` -> classe com os métodos para cálculo do DV e validação de CNPJ alfanumérico
 
-### Versão em C++ implementada (ausente no SERPRO)
+#### Versão em C++ implementada
 
 #### Pasta e arquivos
 
 `src\c++ansi\cnpj.cpp`
 
-Veja o arquivo` src\c++ansi\readme.md` para maiores detalhes
+Veja o arquivo ` src\c++ansi\readme.md` para maiores detalhes
 
-### Versão COBOL implementada
+#### Versão COBOL implementada
 
 `src\cobol\valida.cbl`
 
 Veja o arquivo  `src\cobol\README.md` para maiores detalhes
+
+#### Versão Ruby implementada
 
 ---
 
