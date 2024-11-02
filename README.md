@@ -27,7 +27,7 @@ Mas o site original, onde está a notícia é o que segue abaixo:
 
 ***Como o objetivo aqui é facilitar a vida de todos os dev´s brasileiros, resolvi implementar em diversas linguagens e testar cada um do códigos fontes em seus respectivos ambientes típicos de execução, ou seja, montar um ambiente para cada uma das linguagens em que foi implementado e testar o executável, inclusive com correções e melhorias evolutivas, para garantir a confiabilidade e segurança do código fonte. Se você encontrar algum problema, não hesite em abrir um issue no Github do projeto.***
 
-***Inclusive, pretendemos disponibilizar esses ambientes em containers para os senhores. Também disponibilizamos uma API e um chatbot que implementam os mesmos algortimos, para os mais "hardcores".***
+***Inclusive, pretendemos disponibilizar esses ambientes em containers para os senhores. Também disponibilizamos uma API e um chatbot que implementam os mesmos algoritmos, para os mais "hardcores".***
 
 ***As versões nas linguagens não implementadas oringalmente pelo SERPRO, que também podem ser encontradas nas sub-pastas da pasta "SRC", com respectivos READMEs, são as seguintes:***
 
