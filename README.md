@@ -35,6 +35,7 @@ Mas o site original, onde está a notícia é o que segue abaixo:
 * ***C++***
 * ***COBOL***
 * ***Ruby***
+* ***ADVPL (Totvs/Protheus)***
 
 ---
 
