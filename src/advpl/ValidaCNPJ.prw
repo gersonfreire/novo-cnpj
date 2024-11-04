@@ -33,7 +33,7 @@ Static Function RemoveNonNumeric(cText)
     For nIndex := 1 To Len(cText)
         If IsDigit(SubStr(cText, nIndex, 1))
             cResult += SubStr(cText, nIndex, 1)
-        EndIf
+        EndIf  
     Next
 
 Return cResult
