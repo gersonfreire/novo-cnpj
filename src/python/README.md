@@ -4,7 +4,7 @@
 
 ### Exemplo de execução do gerador de dígito verificador
 
-`serpro@serpro:~/cnpj-alfanumerico/python$ python3 -dv cnpj.py 12.ABC.345/01DE`
+`serpro@serpro:~/cnpj-alfanumerico/python$ python cnpj.py -dv 12.ABC.345/01DE`
 
 Teremos como resposta o dígito verificador: **35**
 
@@ -18,12 +18,12 @@ Basta abrir o projeto no *VS Code* e, no íconde de debug, escolher, ao lado de 
 
 ### Exemplo com CNPJ válido
 
-`serpro@serpro:~/cnpj-alfanumerico/python$ python3 -v cnpj.py 12.BC3.450/1DE-35`
+`serpro@serpro:~/cnpj-alfanumerico/python$ python cnpj.py -v 12.BC3.450/01DE-35`
 
 O programa irá responder **True**
 
 ### Exemplo com CNPJ inválido
 
-`serpro@serpro:~/cnpj-alfanumerico/python$ python3 -v cnpj.py 12.BC3.450/1DE-36`
+`serpro@serpro:~/cnpj-alfanumerico/python$ python cnpj.py -v 12.BC3.450/1DE-36`
 
 O programa irá responder **False**

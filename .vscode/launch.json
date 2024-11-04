@@ -12,8 +12,8 @@
             "console": "integratedTerminal",
             "args": [
                 "-V",
-                "33.530.734/0001-31"
-                // "12.BC3.450/1DE-35"
+                "12.ABC.345/01DE-35"
+                // "33.530.734/0001-31"
                 // "${command:pickArgs}"
             ]
         }
