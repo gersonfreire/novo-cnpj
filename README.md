@@ -14,6 +14,8 @@ Mas o site original, onde está a notícia é o que segue abaixo:
 
 *Na pasta "src" existem subpastas para cada linguagem que já foi previamente implementada pelo SERPRO, em cada subpasta existe um README específico para cada linguagem, escolha a sua, apenas clone e divirta-se.*
 
+**Recomendamos usar o VS Code e abrir a pasta inteira nele, pois as orientações de execução para cada linguagem, nos READMEs respectivos, serão voltadas para essa ferramenta.**
+
 ### **Implementações originais do SERPRO:**
 
 * ***TypeScript***

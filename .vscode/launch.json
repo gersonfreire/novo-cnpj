@@ -1,0 +1,21 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python CNPJ console",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/python/cnpj.py",
+            "console": "integratedTerminal",
+            "args": [
+                "-V",
+                "33.530.734/0001-31"
+                // "12.BC3.450/1DE-35"
+                // "${command:pickArgs}"
+            ]
+        }
+    ]
+}
