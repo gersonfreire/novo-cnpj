@@ -18,10 +18,10 @@ Mas o site original, onde está a notícia é o que segue abaixo:
 
 ### **Implementações originais do SERPRO:**
 
-* ***[TypeScript](src/typescript/README.md)***
-* ***[JavaScript](src/javascript/README.md)***
-* ***[Java](src/java/README.md)***
-* ***[Python](src/python/README.md)***
+* ***[TypeScript](src/typescript/)***
+* ***[JavaScript](src/javascript/)***
+* ***[Java](src/java/)***
+* ***[Python](src/python/)***
 
 ---
 
@@ -34,10 +34,10 @@ Mas o site original, onde está a notícia é o que segue abaixo:
 ***As versões nas linguagens não implementadas oringalmente pelo SERPRO, que também podem ser encontradas nas sub-pastas da pasta "SRC", com respectivos READMEs, são as seguintes:***
 
 * ***[C# (dotnet)]()***
-* ***[C++](src/c++ansi/readme.md)***
-* ***[COBOL](src/cobol/README.md)***
-* ***[Ruby](src/ruby/README.md)***
-* ***[ADVPL (Totvs/Protheus)](src/advpl/README.md)***
+* ***[C++](src/c++ansi/)***
+* ***[COBOL](src/cobol/)***
+* ***[Ruby](src/ruby/)***
+* ***[ADVPL (Totvs/Protheus)](src/advpl/)***
 
 ---
 
