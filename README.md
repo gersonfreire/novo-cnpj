@@ -20,8 +20,8 @@ Mas o site original, onde está a notícia é o que segue abaixo:
 
 * ***[TypeScript](https://github.com/gersonfreire/novo-cnpj/blob/main/src/typescript/README.md)***
 * ***[JavaScript](https://github.com/gersonfreire/novo-cnpj/blob/main/src/javascript/README.md)***
-* ***Java***
-* ***Python***
+* ***[Java](https://github.com/gersonfreire/novo-cnpj/blob/main/src/java/README.md)***
+* ***[Python](https://github.com/gersonfreire/novo-cnpj/blob/main/src/python/README.md)***
 
 ---
 
@@ -34,10 +34,10 @@ Mas o site original, onde está a notícia é o que segue abaixo:
 ***As versões nas linguagens não implementadas oringalmente pelo SERPRO, que também podem ser encontradas nas sub-pastas da pasta "SRC", com respectivos READMEs, são as seguintes:***
 
 * ***C# (dotnet)***
-* ***C++***
-* ***COBOL***
-* ***Ruby***
-* ***ADVPL (Totvs/Protheus)***
+* ***[C++](https://github.com/gersonfreire/novo-cnpj/blob/main/src/c%2B%2Bansi/readme.md)***
+* ***[COBOL](https://github.com/gersonfreire/novo-cnpj/blob/main/src/cobol/README.md)***
+* ***[Ruby](https://github.com/gersonfreire/novo-cnpj/blob/main/src/ruby/README.md)***
+* ***[ADVPL (Totvs/Protheus)](https://github.com/gersonfreire/novo-cnpj/blob/main/src/advpl/README.md)***
 
 ---
 
