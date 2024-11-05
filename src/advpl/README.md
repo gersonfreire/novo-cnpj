@@ -8,7 +8,6 @@ Este projeto oferece um validador de CNPJ escrito em ADVPL para o ambiente Totvs
 src/
  ├── advpl/  
  ├── 	ValidaCNPJ.prw 
- ├── 	.gitignore 
  └── 	README.md 
 
 ```
