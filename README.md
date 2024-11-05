@@ -18,7 +18,7 @@ Mas o site original, onde está a notícia é o que segue abaixo:
 
 ### **Implementações originais do SERPRO:**
 
-* ***TypeScript***
+* ***[TypeScript](https://github.com/gersonfreire/novo-cnpj/blob/main/src/typescript/README.md)***
 * ***JavaScript***
 * ***Java***
 * ***Python***
