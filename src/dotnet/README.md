@@ -4,16 +4,17 @@ Este projeto oferece um validador de CNPJ escrito em C# utilizando .NET. Ele per
 
 ## Estrutura do Projeto
 
+
+```
 src/
 ├── dotnet/
 │   ├── dv.cs
 │   ├── validador.cs
 │   ├── .gitignore
-│   └──
-
-README.md
-
+│   └──README.md
 └── ...
+```
+
 
 ## Pré-requisitos
 
