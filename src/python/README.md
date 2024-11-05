@@ -24,6 +24,6 @@ O programa irá responder **True**
 
 ### Exemplo com CNPJ inválido
 
-`serpro@serpro:~/cnpj-alfanumerico/python$ python cnpj.py -v 12.BC3.450/1DE-36`
+`serpro@serpro:~/cnpj-alfanumerico/python$ python cnpj.py -v 12.BC3.450/01DE-36`
 
 O programa irá responder **False**
