@@ -6,11 +6,11 @@ Este projeto oferece um validador de CNPJ escrito em ADVPL para o ambiente Totvs
 
 ```
 src/
- ├── advpl/ │ 
- ├── ValidaCNPJ.prw │ 
- ├── .gitignore 
- │ 
- └── README.md └── ...
+ ├── advpl/  
+ ├── 	ValidaCNPJ.prw 
+ ├── 	.gitignore 
+ └── 	README.md 
+
 ```
 
 ### Pré-requisitos
@@ -21,11 +21,11 @@ src/
 ## Configuração do Ambiente
 
 1. **Clone o repositório**:
+
    ```sh
    git clone https://github.com/seu-usuario/novo-cnpj.git
    cd novo-cnpj/src/advpl
    ```
-
 2. **Configuração do ambiente Totvs/Protheus** :
 
 * Certifique-se de que o ambiente de desenvolvimento Totvs/Protheus está configurado corretamente.
@@ -35,9 +35,10 @@ src/
 
 1. **Compilar o código** : No terminal integrado do VS Code, execute:
 
-   **advpl **compile** **-p** **-s** **-o** **ValidaCNPJ.prw
-
-1. **Executar o programa** : No ambiente Totvs/Protheus, execute o programa `ValidaCNPJ`.
+   ```
+   advpl compile -p -s -o **ValidaCNPJ.prw
+   ```
+2. **Executar o programa** : No ambiente Totvs/Protheus, execute o programa `ValidaCNPJ`.
 
 ## Estrutura do Código
 
