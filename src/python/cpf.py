@@ -1,6 +1,5 @@
 import re
 import sys
-from dv import DigitoVerificador
 
 class CPF:
 
@@ -34,13 +33,15 @@ class CPF:
 
     def gera_dv(self):
         self.__remove_digitos_cpf()
-        dv1 = DigitoVerificador(self.cpf_sem_dv, tipo='cpf')
-        dv1char = '{}'.format(dv1.calcula())
+        dv1 = self.__calcula_dv(self.cpf_sem_dv, range(10, 1, -1))
+        dv2 = self.__calcula_dv(self.cpf_sem_dv + str(dv1), range(11, 1, -1))
 
-        dv2 = DigitoVerificador(self.cpf_sem_dv + dv1char, tipo='cpf')
-        dv2char = '{}'.format(dv2.calcula())
+        return "%s%s" % (dv1, dv2)
 
-        return "%s%s" % (dv1char, dv2char)
+    def __calcula_dv(self, cpf, pesos):
+        soma = sum(int(digito) * peso for digito, peso in zip(cpf, pesos))
+        resto = soma % 11
+        return 0 if resto < 2 else 11 - resto
 
     def __valida_formato(self, _cpf):
         return re.match(r'(^([A-Z]|\d){3}\.([A-Z]|\d){3}\.([A-Z]|\d){3}\-([A-Z]|\d){2}$)', _cpf)
