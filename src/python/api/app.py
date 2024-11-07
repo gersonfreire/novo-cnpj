@@ -37,6 +37,6 @@ if __name__ == '__main__':
     if ssl_key_path and ssl_cert_path and os.path.exists(ssl_key_path) and os.path.exists(ssl_cert_path):
         app.run(host='0.0.0.0', port=9002, debug=True, ssl_context=(ssl_cert_path, ssl_key_path))
     else:
-        app.run(host='0.0.0.0', port=9002, debug=True)
+        app.run(host='0.0.0.0', port=9002) # , debug=True)
 
 # http://127.0.0.1:9002/validarCpf/12345678909
