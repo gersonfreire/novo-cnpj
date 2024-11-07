@@ -22,6 +22,9 @@ Mas o site original, onde está a notícia é o que segue abaixo:
 * ***[JavaScript](src/javascript/)***
 * ***[Java](src/java/)***
 * ***[Python](src/python/)***
+  * *[Aplicação console](https://github.com/gersonfreire/novo-cnpj/tree/main/src/python)*
+  * *[API REST](https://github.com/gersonfreire/novo-cnpj/tree/main/src/python/api)*
+  * *[Bot Telegram](https://github.com/gersonfreire/novo-cnpj/tree/main/src/python/bot)*
 
 ---
 
