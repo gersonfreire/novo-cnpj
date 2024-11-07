@@ -4,9 +4,8 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # adiciona o path da pasta raiz do projeto
 sys.path.append(current_dir + "/../../")
-# sys.path.append("..\..\") 
 
-from python.dv import DigitoVerificador
+from dv import DigitoVerificador
 import sys
 
 class CPFDao:
