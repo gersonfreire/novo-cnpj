@@ -34,7 +34,18 @@ O programa irá responder **True**
 
 O programa irá responder **False**
 
-### Validação de CPF - Exemplo de uso
+### Validação CPF usando cpf.py
+
+```
+from cpf import CPF
+
+cpf = "123.456.789-09"
+cpf_obj = CPF(cpf)
+is_valid = cpf_obj.valida()
+print(f"O CPF {cpf} é {'válido' if is_valid else 'inválido'}.")
+```
+
+### Validação de CPF - Exemplo de uso usando dv.py
 
 ```
 from cpf_dao import CPFDao
