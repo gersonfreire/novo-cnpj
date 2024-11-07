@@ -37,7 +37,10 @@ src/
    ```
    advpl compile -p -s -o ValidaCNPJ.prw
    ```
-2. **Executar o programa** : No ambiente Totvs/Protheus, execute o programa `ValidaCNPJ`.
+2. Ou no Protheus legado:
+
+   `compilar c:\protheus\fontes\meuprograma.prw`
+4. **Executar o programa** : No ambiente Totvs/Protheus, execute o programa `ValidaCNPJ`.
 
 ## Estrutura do Código
 
