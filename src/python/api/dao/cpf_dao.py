@@ -20,7 +20,7 @@ class CPFDao:
         tipo = 'cpf'
         dv = DigitoVerificador(cpf, tipo)
         
-        dv_calculado = dv.calcula(cpf)
+        dv_calculado = dv.calcula()
         
         return dv_calculado == int(cpf[9:11])
 
