@@ -33,3 +33,13 @@ O programa irá responder **True**
 `serpro@serpro:~/cnpj-alfanumerico/python$ python cnpj.py -v 12.BC3.450/01DE-36`
 
 O programa irá responder **False**
+
+### Validação de CPF - Exemplo de uso
+
+```
+from cpf_dao import CPFDao
+
+cpf = "12345678909"
+is_valid = CPFDao.validar_cpf(cpf)
+print(f"O CPF {cpf} é {'válido' if is_valid else 'inválido'}.")
+```
