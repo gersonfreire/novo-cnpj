@@ -5,7 +5,7 @@ current_dir = os.path.dirname(os.path.abspath(__file__))
 # adiciona o path da pasta raiz do projeto
 sys.path.append(current_dir + "/../../")
 
-from dv import DigitoVerificador
+from dv import cpf #  DigitoVerificador
 import sys
 
 class CPFDao:
@@ -18,9 +18,11 @@ class CPFDao:
             return False
         
         tipo = 'cpf'
-        dv = DigitoVerificador(cpf[:9], tipo)
+        # dv = DigitoVerificador(cpf[:9], tipo)
+        cpf = CPF(_input)
         
-        dv_calculado = dv.calcula()
+        # dv_calculado = dv.calcula()
+        dv_calculado = cpf.valida()
         
         return dv_calculado == int(cpf[9:11])
 
