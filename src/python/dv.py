@@ -36,7 +36,7 @@ class DigitoVerificador:
             return 11 - mod_sum
 
 if __name__ == "__main__":
-    _input = sys.argv[1]
-    tipo = sys.argv[2] if len(sys.argv) > 2 else 'cnpj'
+    _input = sys.argv[2]
+    tipo = sys.argv[3] if len(sys.argv) > 3 else 'cnpj'
     dv = DigitoVerificador(_input, tipo)
     print(dv.calcula())
