@@ -35,7 +35,7 @@ src/
 1. **Compilar o código** : No terminal integrado do VS Code, execute:
 
    ```
-   advpl compile -p -s -o **ValidaCNPJ.prw
+   advpl compile -p -s -o ValidaCNPJ.prw
    ```
 2. **Executar o programa** : No ambiente Totvs/Protheus, execute o programa `ValidaCNPJ`.
 
