@@ -16,6 +16,19 @@
                 // "33.530.734/0001-31"
                 // "${command:pickArgs}"
             ]
+        },
+        {
+            "name": "Python CPF console",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/python/dv.py",
+            "console": "integratedTerminal",
+            "args": [
+                "-V",
+                "720.983.257-20"
+                // "33.530.734/0001-31"
+                // "${command:pickArgs}"
+            ]
         }
     ]
 }
