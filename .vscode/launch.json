@@ -25,7 +25,7 @@
             "console": "integratedTerminal",
             "args": [
                 "-V",
-                "720.983.257-20",
+                "72098325720",
                 "cpf"
                 // "33.530.734/0001-31"
                 // "${command:pickArgs}"
