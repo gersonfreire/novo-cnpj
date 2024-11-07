@@ -38,5 +38,5 @@ class DigitoVerificador:
 if __name__ == "__main__":
     _input = sys.argv[2]
     tipo = sys.argv[3] if len(sys.argv) > 3 else 'cnpj'
-    dv = DigitoVerificador(_input, tipo)
+    dv = DigitoVerificador(_input[:9], tipo)
     print(dv.calcula())

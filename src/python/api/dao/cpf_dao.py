@@ -18,7 +18,7 @@ class CPFDao:
             return False
         
         tipo = 'cpf'
-        dv = DigitoVerificador(cpf, tipo)
+        dv = DigitoVerificador(cpf[:9], tipo)
         
         dv_calculado = dv.calcula()
         
