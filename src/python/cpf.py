@@ -9,7 +9,9 @@ class CPF:
             if _cpf_valido:
                 self.cpf = self.__remove_pontuacao(_input_cpf)
             else:
-                raise Exception("CPF não está no padrão aaa.aaa.aaa-aa (Para validação) ou aaa.aaa.aaa (Para geração do DV)")
+                # raise Exception("CPF não está no padrão aaa.aaa.aaa-aa (Para validação) ou aaa.aaa.aaa (Para geração do DV)")
+                self.cpf=str(_input_cpf)
+                
         except Exception as _e:
             print(_e)
             sys.exit(0)
