@@ -46,8 +46,6 @@ class CNPJ:
 	def __valida_formato(self, _cnpj):
 		return re.match(r'(^([A-Z]|\d){2}\.([A-Z]|\d){3}\.([A-Z]|\d){3}\/([A-Z]|\d){4}(\-\d{2})?$)', _cnpj)
 
-
-
 if __name__ == "__main__":
 
 	try:

@@ -1,4 +1,10 @@
-# Versão em Python
+# Versão em Python (console)
+
+## Sobre
+
+Esta é a versão original do SERPRO implementada em Python para linha de comando (console)
+
+Além desta, disponibilizamos, nas sub-pastas filhas, novas implementações de uma [API REST](https://github.com/gersonfreire/novo-cnpj/tree/main/src/python/api) e um [Bot Telegram](https://github.com/gersonfreire/novo-cnpj/tree/main/src/python/bot).
 
 ## Executando o gerador de dígito verificador
 
