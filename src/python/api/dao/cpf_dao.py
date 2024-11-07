@@ -1,4 +1,8 @@
+# adiciona o path da pasta onde está o modulo de validação
+sys.path.append('../../../') 
+
 from dv import DigitoVerificador
+import sys
 
 class CPFDao:
     @staticmethod
