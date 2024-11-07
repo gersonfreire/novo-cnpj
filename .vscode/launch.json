@@ -21,14 +21,14 @@
             "name": "Python CPF console",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/src/python/dv.py",
+            // "program": "${workspaceFolder}/src/python/dv.py",
+            "program": "${workspaceFolder}/src/python/cpf.py",
             "console": "integratedTerminal",
             "args": [
-                // "-V",
-                "72098325720",
+                "-V",
+                "720.983.257-20",
+                // "72098325720",
                 // "cpf"
-                // "33.530.734/0001-31"
-                // "${command:pickArgs}"
             ]
         }
     ]
