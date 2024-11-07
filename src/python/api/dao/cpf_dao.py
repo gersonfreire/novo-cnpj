@@ -20,7 +20,9 @@ class CPFDao:
         tipo = 'cpf'
         dv = DigitoVerificador(cpf, tipo)
         
-        return dv.validate(cpf)
+        dv_calculado = dv.calcula(cpf)
+        
+        return dv_calculado == int(cpf[9:11])
 
         # Calcula o primeiro dígito verificador
         # dv1 = DigitoVerificador(cpf[:9], tipo='cpf')
