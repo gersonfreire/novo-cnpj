@@ -1,9 +1,12 @@
 import sys,os
 
-# adiciona o path da pasta onde está o modulo de validação
-sys.path.append('../../') 
+current_dir = os.path.dirname(os.path.abspath(__file__))
 
-from dv import DigitoVerificador
+# adiciona o path da pasta raiz do projeto
+sys.path.append(current_dir + "/../../")
+# sys.path.append("..\..\") 
+
+from python.dv import DigitoVerificador
 import sys
 
 class CPFDao:
