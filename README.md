@@ -67,6 +67,10 @@ Créditos do repositório original: [theofurtado05 (Theo Furtado Mauricio)](http
 
 Para sugerir alguma melhoria ou nova funcionalidade, por favor, abra um novo issue em : [Issues · gersonfreire/novo-cnpj](https://github.com/gersonfreire/novo-cnpj/issues)
 
-Ou entre no grupo de discussão: [grupo telegram](https://t.me/novo_cnpj)
+Ou entre em um dos grupos de discussão: [grupo telegram](https://t.me/novo_cnpj) ou [o Canal no WhatsApp](https://whatsapp.com/channel/0029VaulV6cE50UZTgjqX40Z)
+
+```
+
+```
 
 ---
