@@ -19,7 +19,7 @@ Além de conter classes que representam o modelo computacional dos principais do
 
 ## Requisitos
 
-  * python
+* python
 
 ## Como instalar
 
@@ -39,36 +39,35 @@ Outras linguagens de programação poderão ter versões especificas conforme mi
 
 O projeto está em fase inicial de desenvolvimento.
 
-| Módulo                              |  Situação       |
-|:------------------------------------|:---------------:|
-| [DocumentoIdentificacao](#di)       |Funcional        |
-| [CPF](#cpf)                         |Funcional        |
-| [ValidadorCpf](#vcpf)               |Funcional        |
-| [GeradorCpf](#gcpf)                 |Funcional        |
-| [Cnpj](#cnpj)                       |Funcional        |
-| [ValidadorCnpj](#vcnpj)             |Funcional        |
-| [GeradorCnpj](#gcnpj)               |Funcional        |
-| [InscricaoEstadual](#ie)            |Funcional        |
-| [ValidadorInscricaoEstadual](#vie)  |Funcional        |
-| [GeradorInscricaoEstadual](#gie)    |Não implementado |
-| [InscricaoSuframa](#is)             |Funcional        |
-| [ValidadorSuframa](#vs)             |Funcional        |
-| [GeradorSuframa](#gs)               |Funcional        |
-| [ChaveAcessoNFe](#chave)            |Funcional        |
-| [ValidadorChaveAcessoNFe](#vchave)  |Funcional        |
-| [GeradorChaveAcessoNFe](#gchave)    |Funcional        |
-| [GTIN](#gtin)                       |Funcional        |
-| [ValidadorGTIN](#vgtin)             |Funcional        |
-| [GeradorGTIN](#ggtin)               |Funcional        |
+| Módulo                         |    Situação    |
+| :------------------------------ | :---------------: |
+| [DocumentoIdentificacao](#di)      |     Funcional     |
+| [CPF](#cpf)                        |     Funcional     |
+| [ValidadorCpf](#vcpf)              |     Funcional     |
+| [GeradorCpf](#gcpf)                |     Funcional     |
+| [Cnpj](#cnpj)                      |     Funcional     |
+| [ValidadorCnpj](#vcnpj)            |     Funcional     |
+| [GeradorCnpj](#gcnpj)              |     Funcional     |
+| [InscricaoEstadual](#ie)           |     Funcional     |
+| [ValidadorInscricaoEstadual](#vie) |     Funcional     |
+| [GeradorInscricaoEstadual](#gie)   | Não implementado |
+| [InscricaoSuframa](#is)            |     Funcional     |
+| [ValidadorSuframa](#vs)            |     Funcional     |
+| [GeradorSuframa](#gs)              |     Funcional     |
+| [ChaveAcessoNFe](#chave)           |     Funcional     |
+| [ValidadorChaveAcessoNFe](#vchave) |     Funcional     |
+| [GeradorChaveAcessoNFe](#gchave)   |     Funcional     |
+| [GTIN](#gtin)                      |     Funcional     |
+| [ValidadorGTIN](#vgtin)            |     Funcional     |
+| [GeradorGTIN](#ggtin)              |     Funcional     |
 
-
-### <a name="di"></a> DocumentoIdentificacao
+### `<a name="di"></a>` DocumentoIdentificacao
 
 Classe abstrata, não podendo ser instanciada diretamente, serve como base para todas as classes que representam um documento de identificação ou qualquer outro documento brasileiro que necessite de validação.
 
-### <a name="cpf"></a> CPF
+### `<a name="cpf"></a>` CPF
 
-Classe usada para representar em código Pyhton um _Cadastro de Pessoa Física_ (CPF); permitindo representá-lo textualmente, com a devida formatação e identificar a sua validade.
+Classe usada para representar em código Python um _Cadastro de Pessoa Física_ (CPF); permitindo representá-lo textualmente, com a devida formatação e identificar a sua validade.
 
 #### Utilização
 
@@ -98,7 +97,7 @@ Classe usada para representar em código Pyhton um _Cadastro de Pessoa Física_ 
 
 > Para obter a _string_ utilizada ao instanciar um CPF, basta acessar a propriedade **rawValue** da instância criada.
 
-### <a name="vcpf"></a> ValidadorCpf
+### `<a name="vcpf"></a>` ValidadorCpf
 
 Classe responsável por validar uma instância de CPF ou uma _string_ contendo a representação numérica de um CPF.
 
@@ -116,7 +115,7 @@ Classe responsável por validar uma instância de CPF ou uma _string_ contendo a
     >>> ValidadorCpf.validar(cpf)
     True
 
-### <a name="gcpf"></a> GeradorCpf
+### `<a name="gcpf"></a>` GeradorCpf
 
 Classe responsável por gerar aleatoriamente um CPF válido.
 
@@ -126,25 +125,25 @@ Classe responsável por gerar aleatoriamente um CPF válido.
     >>> cpf.isValid
     True
 
-### <a name="cnpj"></a> Cnpj
+### `<a name="cnpj"></a>` Cnpj
 
 Classe usada para representar em código Pyhton um _Cadastro Nacional de Pessoa Jurídica_ (CNPJ); permitindo representá-lo textualmente, com a devida formatação e identificar a sua validade.
 
 #### Utilização
 
-	>>> cnpj = Cnpj('abcdefghijklmn')
+    >>> cnpj = Cnpj('abcdefghijklmn')
 	>>> cnpj.isValid
 	False
 
-	>>> cnpj = Cnpj('12345678901234')
+    >>> cnpj = Cnpj('12345678901234')
 	>>> cnpj.isValid
 	False
 
-	>>> cnpj = Cnpj('19.658.147/0001-0O')
+    >>> cnpj = Cnpj('19.658.147/0001-0O')
 	>>> cnpj.isValid
 	False
 
-	>>> cnpj = Cnpj('19.658.147/0001-00')
+    >>> cnpj = Cnpj('19.658.147/0001-00')
 	>>> cnpj.isValid
 	True
 
@@ -154,31 +153,31 @@ Classe usada para representar em código Pyhton um _Cadastro Nacional de Pessoa 
 
 > Para obter a _string_ utilizada ao instanciar um CNPJ, basta acessar a propriedade **rawValue** da instância criada.
 
-### <a name="vcnpj"></a> ValidadorCnpj
+### `<a name="vcnpj"></a>` ValidadorCnpj
 
 Classe responsável por validar uma instância de CNPJ ou uma _string_ contendo a representação numérica de um CNPJ.
 
 #### Utilização
 
-	>>> cnpj = Cnpj('abcdefghijklmn')
+    >>> cnpj = Cnpj('abcdefghijklmn')
 	>>> ValidadorCnpj.validar(cnpj)
 	False
 
-	>>> cnpj = Cnpj('19.658.147/0001-0O')
+    >>> cnpj = Cnpj('19.658.147/0001-0O')
 	>>>ValidadorCnpj.validar(cnpj)
 	False
 
-	>>> ValidadorCnpj.validar('12345678901234')
+    >>> ValidadorCnpj.validar('12345678901234')
 	False
 
-	>>> cnpj = Cnpj('34  633 423,0001/60')
+    >>> cnpj = Cnpj('34  633 423,0001/60')
 	>>> ValidadorCnpj.validar(cnpj)
 	True
 
-	>>> ValidadorCnpj.validar('05.692.744/0001-38')
+    >>> ValidadorCnpj.validar('05.692.744/0001-38')
 	True
 
-### <a name="gcnpj"></a> GeradorCnpj
+### `<a name="gcnpj"></a>` GeradorCnpj
 
 Classe responsável por gerar aleatoriamente um CNPJ válido.
 
@@ -188,7 +187,7 @@ Classe responsável por gerar aleatoriamente um CNPJ válido.
     >>> cnpj.isValid
     True
 
-### <a name="is"></a> InscricaoSuframa
+### `<a name="is"></a>` InscricaoSuframa
 
 Representa o número de inscrição na Superintendência da Zona Franca de Manaus (SUFRAMA)
 
@@ -198,20 +197,19 @@ A composição deste indicador é: _SS.NNNN.LLD_, onde:
 
 **SS** representa o __código do setor de atividade__ da empresa, conforme exemplo abaixo:
 
-| Código  | Descrição                   |
-| :----:  | :---------------------------|
-| 01 e 02 | Cooperativa                 |
+| Código | Descrição                  |
+| :-----: | :--------------------------- |
+| 01 e 02 | Cooperativa                  |
 | 10 e 11 | Comércio                    |
-| 20      | Indústria com projeto pleno |
-| 60      | Serviços                    |
+|   20   | Indústria com projeto pleno |
+|   60   | Serviços                    |
 
 **NNNN** número sequencial
 
 **LL** representa o código da licalidade da Unidade Administrativa da Suframa que habilitou a empresa, conforme exemplo abaixo:
 
-
-| Código | Descrição   |
-| :----: | :-----------|
+| Código | Descrição |
+| :-----: | :---------- |
 |   01   | Manaus      |
 |   10   | Boa Vista   |
 |   30   | Porto Velho |
@@ -250,17 +248,17 @@ A composição deste indicador é: _SS.NNNN.LLD_, onde:
     >>> x.isValid
     False
 
-### <a name="vs"></a> ValidadorSuframa
+### `<a name="vs"></a>` ValidadorSuframa
 
 Valida uma instância de InscricaoSuframa ou uma _string_ contendo a representação numérica de uma Inscrição Suframa.
 
 #### Utilização
 
-    # Validação de uma _string_ representando uma Inscrição Suframa:
+    # Validação de uma_string_ representando uma Inscrição Suframa:
     >>> ValidadorSuframa.validar('101580100')
     True
 
-    # Validação de uma _string_ representando uma Inscrição Suframa inválida (contendo caracteres não numéricos):
+    # Validação de uma_string_ representando uma Inscrição Suframa inválida (contendo caracteres não numéricos):
     >>> ValidadorSuframa.validar('1015801OO')
     False
 
@@ -269,7 +267,7 @@ Valida uma instância de InscricaoSuframa ou uma _string_ contendo a representa�
     >>> ValidadorSuframa.validar(x)
     False
 
-### <a name="gs"></a> GeradorSuframa
+### `<a name="gs"></a>` GeradorSuframa
 
 Gera aleatoriamente uma Inscrição Suframa válida
 
@@ -283,7 +281,7 @@ Gera aleatoriamente uma Inscrição Suframa válida
 
 > As inscrições são geradas de forma aleatória, respeitando as leis de formação estabelecidas pela SUFRAMA.
 
-### <a name="ie"></a> InscricaoEstadual
+### `<a name="ie"></a>` InscricaoEstadual
 
 Representa, em código Pyhton, uma _Inscrição Estadual_ (IE), ou o registro do contribuinte no cadastro do ICMS mantido pela Receita Estadual; permitindo representá-lo textualmente, com a devida formatação e identificar a sua validade.
 
@@ -299,7 +297,7 @@ Representa, em código Pyhton, uma _Inscrição Estadual_ (IE), ou o registro do
     >>> print(ie)
     613.855.219.926
 
-### <a name="vie"></a> ValidadorInscricaoEstadual
+### `<a name="vie"></a>` ValidadorInscricaoEstadual
 
 Valida a consistência de uma instância de InscricaoEstadual ou uma _string_ contendo a representação numérica de uma Inscrição Estadual para uma determinada Unidade da Federação, informada juntamente com a representação numérica da IE a qual se deseja validar.
 
@@ -317,6 +315,7 @@ Valida a consistência de uma instância de InscricaoEstadual ou uma _string_ co
     False
 
 > **NOTA**: Caso não se deseje utilizar o __ValidadorInscricaoEstadual__, pode-se utilizar o validador específico para uma determinada Unidade da Federação.
+
 <p>Cada Unidade da Federação brasileira possui o seu próprio validador, definido por: **Validador**XX, onde _XX_ deve ser substituído pela sigla da Unidade da Federação desejada.</p>
 <p>O Exemplo a seguir mostra como utilizar somente o validador específico para o Ceará, visando validar uma Inscrição Estadual deste Estado:</p>
 
@@ -328,11 +327,12 @@ Valida a consistência de uma instância de InscricaoEstadual ou uma _string_ co
 
 > **IMPORTANTE**: Ao contrário de ValidadorInscricaoEstadual, os validadores específicos de cada UF validam somente uma cadeia de caracteres (_string_) contendo o número representativo da Inscrição Estadual a ser validada.
 
-### <a name="chave"></a> ChaveAcessoNFe
+### `<a name="chave"></a>` ChaveAcessoNFe
 
 Representa a **Chave de Acesso** de uma Nota Fiscal Eletrônica.
 
-#### <a name="lfchave"></a> Lei de formação de uma Chave de Acesso de NF-e
+#### `<a name="lfchave"></a>` Lei de formação de uma Chave de Acesso de NF-e
+
 A Chave de Acesso da Nota Fiscal Eletrônica é representada por uma sequência de 44 caracteres numéricos, devendo ser composta pelos seguintes campos que se encontram dispersos no Layout da NF-e:
 
 * UF - Código da UF do emitente do Documento Fiscal
@@ -345,10 +345,9 @@ A Chave de Acesso da Nota Fiscal Eletrônica é representada por uma sequência 
 * Código Numérico - Código numérico que compõe a Chave de Acesso
 * DV - Dígito verificados
 
-| Código    |  UF  | AAMM | CNPJ | Modelo | Série | Número | Forma Emissão | Código Numérico |  DV  |
-| :--------:|:----:|:----:|:----:|:------:|:-----:|:------:|:-------------:|:---------------:|:----:|
-|Quantidade de caracteres |02    |04    |14    |02      |03     |09      |01             |08               |01    |
-
+|         Código         | UF | AAMM | CNPJ | Modelo | Série | Número | Forma Emissão | Código Numérico | DV |
+| :----------------------: | :-: | :--: | :--: | :----: | :----: | :-----: | :------------: | :---------------: | :-: |
+| Quantidade de caracteres | 02 |  04  |  14  |   02   |   03   |   09   |       01       |        08        | 01 |
 
 #### Utilização
 
@@ -362,7 +361,7 @@ A Chave de Acesso da Nota Fiscal Eletrônica é representada por uma sequência 
     >>> ca.isValid
     True
 
-### <a name="vchave"></a> ValidadorChaveAcessoNFe
+### `<a name="vchave"></a>` ValidadorChaveAcessoNFe
 
 Valida a consistência e a integridade de uma instância de [ChaveAcessoNFe](#chave) ou uma _string_ contendo a representação numérica de uma Chave de Acesso, através do cálculo de seu _dígito verificador_.
 
@@ -391,8 +390,7 @@ Valida a consistência e a integridade de uma instância de [ChaveAcessoNFe](#ch
     >>> validarChaveAcessoNFe(chave)
     True
 
-
-#### <a name="dvchave"></a> Cálculo do dígito verificador
+#### `<a name="dvchave"></a>` Cálculo do dígito verificador
 
 O dígito verificador da chave de acesso da NF-e é baseado em um cálculo do módulo 11. O módulo 11 de um número é calculado multiplicando-se cada algarismo pela sequência de multiplicadores 2,3,4,5,6,7,8,9,2,3, ..., posicionados da direita para a esquerda.
 
@@ -406,10 +404,10 @@ Exemplo: consideremos a seguinte chave de acesso: _52060433009911002506550120000
 
 Isolando o _dígito verificador_, temos: _5206043300991100250655012000000780026730161_
 
-|**Chave** | 5 | 2 | 0 | 6 | 0 | 4 | 3 | 3 | 0 | 0 | 9 | 9 | 1 | 1 | 0 | 0 | 2 | 5 | 0 | 6 | 5 | 5 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | 8 | 0 | 0 | 2 | 6 | 7 | 3 | 0 | 1 | 6 | 1 |
-|:------------------------|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-|**Pesos** | 4 | 3 | 2 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 |
-|**Ponderação** |20 | 6 | 0 |54 | 0 |28 |18 |15 | 0 | 0 |18 |81 | 8 | 7 | 0 | 0 | 8 |15 | 0 |54 |40 |35 | 0 | 5 | 8 | 0 | 0 | 0 | 0 | 0 | 0 |35 |32 | 0 | 0 |18 |48 |49 |18 | 0 | 4 |18 | 2 |
+| **Chave**        | 5 | 2 | 0 | 6 | 0 | 4 | 3 | 3 | 0 | 0 | 9 | 9 | 1 | 1 | 0 | 0 | 2 | 5 | 0 | 6 | 5 | 5 | 0 | 1 | 2 | 0 | 0 | 0 | 0 | 0 | 0 | 7 | 8 | 0 | 0 | 2 | 6 | 7 | 3 | 0 | 1 | 6 | 1 |
+| :--------------------- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| **Pesos**        | 4 | 3 | 2 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 | 9 | 8 | 7 | 6 | 5 | 4 | 3 | 2 |
+| **Ponderação** | 20 | 6 | 0 | 54 | 0 | 28 | 18 | 15 | 0 | 0 | 18 | 81 | 8 | 7 | 0 | 0 | 8 | 15 | 0 | 54 | 40 | 35 | 0 | 5 | 8 | 0 | 0 | 0 | 0 | 0 | 0 | 35 | 32 | 0 | 0 | 18 | 48 | 49 | 18 | 0 | 4 | 18 | 2 |
 
 **Somatório das ponderações**: _644_
 
@@ -419,7 +417,7 @@ Como o dígito verificador (DV) = 11 - (resto da divisão), temos: **11 - 6 = 5*
 
 Neste caso o DV da chave de acesso da NF-e é igual a "5".
 
-#### <a name="consistenciachave"></a> Verificação da _consistência_ da Chave de Acesso
+#### `<a name="consistenciachave"></a>` Verificação da _consistência_ da Chave de Acesso
 
 Por ter uma [lei de formação](#lfchave) peculiar, o _[ValidadorChaveAcessoNFe](#vchave)_ verifica a consistência de uma determinada chave de acesso, observando:
 
@@ -430,7 +428,7 @@ Por ter uma [lei de formação](#lfchave) peculiar, o _[ValidadorChaveAcessoNFe]
 
 > Desta forma, para que uma chave de acesso de NF-e seja válida, esta deverá passar pelo cálculo do Dígito Verificador e pelo teste de consistência.
 
-### <a name="gchave"></a> GeradorChaveAcessoNFe
+### `<a name="gchave"></a>` GeradorChaveAcessoNFe
 
 Gera uma [Chave de Acesso de NF-e](#chave) válida.
 
@@ -471,43 +469,43 @@ A chave gerada pelo [GeradorChaveAcessoNFe](#gchave) obedece às [regras de cons
 * numero - [Gera uma chave de acesso informando o núemro do Documento Fiscal](#gchaveNumero)
 * formaEmissao - [Gera uma chave de acesso informando o tipo de emissão da NF-e](#gchaveEmissao)
 
-##### <a name="gchaveUF"></a> Gerar uma chave de acesso para uma determinada Unidade da Federação (23 - Ceará):
+##### `<a name="gchaveUF"></a>` Gerar uma chave de acesso para uma determinada Unidade da Federação (23 - Ceará):
 
     >>> chave = GeradorChaveAcessoNFe.gerar(UF=23)
     >>> chave.rawValue
     '23181200840039000117652898295631409915000755'
 
-##### <a name="gchaveAno"></a> Gerar uma chave de acesso para um determinado ano:
+##### `<a name="gchaveAno"></a>` Gerar uma chave de acesso para um determinado ano:
 
     >>> chave = GeradorChaveAcessoNFe.gerar(anoEmissao=2015)
     >>> chave.rawValue
     '23151289106950000109651490922639616463100456'
 
-##### <a name="gchaveMes"></a> Gerar uma chave de acesso para um determinado mês:
+##### `<a name="gchaveMes"></a>` Gerar uma chave de acesso para um determinado mês:
 
     >>> chave = GeradorChaveAcessoNFe.gerar(mesEmissao=8)
     >>> chave.rawValue
     '15180853477826000102655678711686215463600041'
 
-##### <a name="gchaveMesAno"></a> Gerar uma chave de acesso para uma determinada data (mês e ano) de emissão:
+##### `<a name="gchaveMesAno"></a>` Gerar uma chave de acesso para uma determinada data (mês e ano) de emissão:
 
     >>> chave = GeradorChaveAcessoNFe.gerar(anoEmissao=2015, mesEmissao=1)
     >>> chave.rawValue
     '29150139480855000100653317092547617382300904'
 
-##### <a name="gchaveCNPJ"></a> Gerar uma chave de acesso informando o CNPJ do emitente:
+##### `<a name="gchaveCNPJ"></a>` Gerar uma chave de acesso informando o CNPJ do emitente:
 
     >>> chave = GeradorChaveAcessoNFe.gerar(cnpjEmitente='64802611000136')
     >>> chave.rawValue
     '13181264802611000136651456599176257515300837'
 
-##### <a name="gchaveModelo"></a> Gerar uma chave de acesso de uma NF-e, utilizada nas operações de venda no varejo (modelo de documento fiscal = 55)
+##### `<a name="gchaveModelo"></a>` Gerar uma chave de acesso de uma NF-e, utilizada nas operações de venda no varejo (modelo de documento fiscal = 55)
 
     >>> chave = GeradorChaveAcessoNFe.gerar(modelo=55)
     >>> chave.rawValue
     '27181282761929000106555079534095503558300935'
 
-##### <a name="gchaveSerie"></a> Gerar uma chave de acesso para uma NF-e que não possui série:
+##### `<a name="gchaveSerie"></a>` Gerar uma chave de acesso para uma NF-e que não possui série:
 
     >>> chave = GeradorChaveAcessoNFe.gerar(serie=0)
     >>> chave.rawValue
@@ -515,13 +513,13 @@ A chave gerada pelo [GeradorChaveAcessoNFe](#gchave) obedece às [regras de cons
 
 > Nota: A série também pode ser informada como uma cadeia de caracteres numéricos. No exemplo acima, poderia ter sido informado **'000'** para _serie_.
 
-##### <a name="gchaveNumero"></a> Gerar uma chave de acesso informando o número do documento fiscal:
+##### `<a name="gchaveNumero"></a>` Gerar uma chave de acesso informando o número do documento fiscal:
 
     >>> chave = GeradorChaveAcessoNFe.gerar(numero=1766829)
     >>> chave.rawValue
     '23181241761925000132652850017668297691400378'
 
-##### <a name="gchaveEmissao"></a> Gerar uma chave de acesso para uma NF-e emitida com Contingência FS-IA, com impressão do DANFE em formulário de segurança (Tipo de emissã0 = 2)
+##### `<a name="gchaveEmissao"></a>` Gerar uma chave de acesso para uma NF-e emitida com Contingência FS-IA, com impressão do DANFE em formulário de segurança (Tipo de emissã0 = 2)
 
     >>> chave = GeradorChaveAcessoNFe.gerar(formaEmissao=2)
     >>> chave.rawValue
@@ -537,7 +535,7 @@ Isto posto, desejando-se criar uma chave de acesso emitida no Ceará (Código IB
 
 > **Atenção**: a forma abreviada do gerador _(gerarChaveAcessoNFe)_ não permite a passagem de parâmetros.
 
-### <a name="gtin"></a>GTIN
+### `<a name="gtin"></a>`GTIN
 
 Representa um Número Global do Item Comercial - Global Trade Item Number (GTIN)
 
@@ -572,7 +570,7 @@ utilizado no código de barras UPC-A, o GTIN-13 é codificado no EAN-13 e o GTIN
     >>> gtin.isValid
     True
 
-### <a name="vgtin"></a> ValidadorGTIN
+### `<a name="vgtin"></a>` ValidadorGTIN
 
 Valida uma instância de GTIN, um inteiro ou uma cadeia de caracteres numéricos que representa um GTIN, a partir do [cálculo de seu dígito verificador][calculo-digito-gtin], o qual assegura a sua integridade.
 
@@ -606,11 +604,11 @@ Valida uma instância de GTIN, um inteiro ou uma cadeia de caracteres numéricos
     >>> validar_gtin('62910415OO213')
     False
 
-### <a name="ggtin"></a> GeradorGTIN
+### `<a name="ggtin"></a>` GeradorGTIN
 
 Gera uma instância de um [GTIN](#gtin) válido.
 
->IMPORTANTE: Este gerador de GTIN tem como intenção ajudar estudantes, programadores, analistas e testadores de sistemas computacionais a gerar GTINs válidas. Normalmente necessárias parar testar seus softwares em desenvolvimento. A má utilização dos dados aqui gerados é de total responsabilidade do usuário. Os números são gerados de forma aleatória, respeitando as regras de criação de um GTIN.
+> IMPORTANTE: Este gerador de GTIN tem como intenção ajudar estudantes, programadores, analistas e testadores de sistemas computacionais a gerar GTINs válidas. Normalmente necessárias parar testar seus softwares em desenvolvimento. A má utilização dos dados aqui gerados é de total responsabilidade do usuário. Os números são gerados de forma aleatória, respeitando as regras de criação de um GTIN.
 
 #### Utilização
 
