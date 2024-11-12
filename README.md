@@ -56,6 +56,15 @@ Créditos do repositório original: [theofurtado05 (Theo Furtado Mauricio)](http
 
 ---
 
-Bot do Telegram, publicado, que valida CPF usando o código fonte da pasta `src\python\bot:`
+### Bot do Telegram, publicado, que valida CPF usando o código fonte da pasta `src\python\bot:`
 
-[Clique aqui para acessar o bot](https://t.me/OpenGovBot)
+[Clique aqui para acessar o bot
+](https://t.me/OpenGovBot)
+
+---
+
+### Sugestões
+
+Para sugerir alguma melhoria ou nova funcionalidade, por favor, abra um novo issue em : [Issues · gersonfreire/novo-cnpj](https://github.com/gersonfreire/novo-cnpj/issues)
+
+---
