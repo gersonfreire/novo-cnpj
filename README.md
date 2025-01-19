@@ -54,7 +54,7 @@ Agradeço ao [theofurtado05](https://github.com/theofurtado05), autor do reposit
 
 Créditos do repositório original: [theofurtado05 (Theo Furtado Mauricio)](https://github.com/theofurtado05), obrigado Theo!
 
-[SOA WebServices](https://github.com/gersonfreire/soawebservices)
+[SDK para o Portal SOA WebServices](https://github.com/gersonfreire/soawebservices)
 
 ---
 
