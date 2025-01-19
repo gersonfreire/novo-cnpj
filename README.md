@@ -54,6 +54,8 @@ Agradeço ao [theofurtado05](https://github.com/theofurtado05), autor do reposit
 
 Créditos do repositório original: [theofurtado05 (Theo Furtado Mauricio)](https://github.com/theofurtado05), obrigado Theo!
 
+[SOA WebServices]([https://github.com/gersonfreire/novo-cnpj](https://github.com/gersonfreire/soawebservices)
+
 ---
 
 ### Bot do Telegram, publicado, que valida CPF usando o código fonte da pasta `src\python\bot:`
